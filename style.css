@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(176, 206, 176);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    width: 40%;
+    background-color: rgb(176, 206, 176);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+}
+.pass_box{
+    padding: 10px;
+background-color: white;
+font-size: 30px;
+display: block;
+padding: 10px;
+}
+.pass_len,.uppercase,.lowercase,.numbers,.symbols{
+    padding: 5px;
+font-weight: 500;
+font-size: 20px;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.pass_len input{
+    width: 30%;
+    position: relative;
+    left: 70%;
+}
+.btn{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+        width: 98%;
+        height: 45px;
+        background-color: #594d4d;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
+}
+
+@media (max-width:400px){
+    .box{
+        width: 80%;
+        font-size: 10px;
+        background-color: rgb(176, 206, 176);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+    .pass_box{
+        font-size: 20px;
+    }
+    .pass_len,.uppercase,.lowercase,.numbers,.symbols{
+        font-size: 15px;
+    }
+    .btn button{
+        font-size: 15px;
+    }
+
+}
